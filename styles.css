@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.first_page{
+    background-image: url("/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.png");
+    background-repeat: repeat;
+    padding: 0px 60px;
+}
+
+.menu_bar{
+    max-width: 1.5rem;
+    height: 2rem;
+}
+
+.nav_menu ul{
+    display: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logo_cont{
+    padding-bottom: 15px;
+}
+
+.home_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_cont>.home_caption{
+    padding: 1rem 0 1rem 0;
+    font-size: 2.5rem;
+    color: white;
+    max-width: 30rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cont1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home_img{
+    max-width: 25.5rem;
+}
+
+.home_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: .7rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 7px;
+}
+
+.search-icon{
+    background-color: #23A6F0;
+    padding: 17px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #E6E6E6;
+}
+
+select{
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6 ;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#dropdown{
+border-radius: 5px 0 0 5px;
+}
+
+@media (min-width:60rem) {
+    .first_page{
+        min-height: 100vh;
+        padding: 0 100px;
+    }
+
+   nav>.nav_menu>.menu_bar{
+    display: none;
+   }
+
+   .nav_menu ul {
+       display: flex;
+       padding-right: 15rem;
+    }
+    
+    .nav_menu ul li {
+       list-style-type: none;
+       padding: 1rem 3rem .95rem 1rem;
+       max-width: 15rem;
+       position: relative;
+       top: 1rem;
+    }
+    
+    .nav_menu ul li:hover{
+       border-bottom: 2px solid white;
+       cursor: pointer;
+   }
+
+   .nav_menu ul li a {
+       text-decoration: none;
+       color: white;
+       font-size: 1.1em;
+       font-weight: normal;
+   }
+
+   .home_cont{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+   }
+
+   .home_cont>.home_caption{
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 40rem;
+   }
+}
